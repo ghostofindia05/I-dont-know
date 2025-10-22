@@ -1,0 +1,12 @@
+winlogbeat.event_logs:
+  - name: E:\New folder\attack 1.evtx
+  - name: E:\New folder\attack 2.evtx
+  - name: E:\New folder\attack 3.evtx
+
+output.elasticsearch:
+  hosts: ["192.168.1.150:9200"]
+  username: "elastic"
+  password: "elasticpassword"
+
+setup.kibana:
+  host: "192.168.1.150:5601"
